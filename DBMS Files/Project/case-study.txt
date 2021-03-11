@@ -1,0 +1,21 @@
+Case Study
+
+Computer Security Incident Response Teams (CSIRTs) track incidents as they occur. When an incident is declared, it is assigned a unique identifier and it is recorded in a database. For each incident, the incident number, a type of incident (chosen from a dynamically changing list), the date it was created, an incident state ('open', 'closed', 'stalled'), and a list of free-form comments is maintained. Associated with each comment is the name of the handler who wrote it.
+
+In addition, associated with each incident could be any number of people (last name, first name, job title, email address), and any number of IP addresses. With each IP address or each person, the handler can record a reason for the address association.
+
+Incident responders must be able to query the database by incident number and receive a report containing the full history of a given incident. Free form comments must be sorted from most recent on top, to oldest on the bottom. In addition, incident responders must be able to record new incidents, change the state of incidents, add comments, and/or add and remove people and IP addresses.
+
+To facilitate information sharing, the incident tracking system must be able to export each incident in a standard incident exchange format and send it via email. Likewise, other teams may send incident-related information via email to the CSIRT operating this application. When that happens, each report received will trigger a new incident being recorded.
+
+All updates to an incident must be recorded as free-form comments to the incident. All use of the system is subject to authentication via an external single sign-on system.
+
+Assignment
+
+    Create a dataflow diagram and an entity-relationship diagram, based on the case study.
+    Design a relational database, based on the models you created. Make sure to include all primary keys, all foreign keys and all check constraints.
+    Implement the database you designed (tables, keys, indexes, etc.)
+    Create a view that can be used to run the requested report and grant appropriate access to the view so that user "kees" can read from your database
+    Populate your database with some sample data
+
+NOTE: PostgreSQL supports an "inet" data type that can be used to record IP addresses.
