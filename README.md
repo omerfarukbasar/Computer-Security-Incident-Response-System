@@ -1,4 +1,4 @@
-# fantastic-lamp
+# DBMS-Case-Study-Project
 This repository contains coursework for the Database Management Systems class.
 
 All of the code was written by myself.
