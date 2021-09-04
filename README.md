@@ -1,4 +1,4 @@
-# DBMS-Case-Study-Project
+# Computer-Security-Incident-Response-System
 This repository contains the final project for the database management systems course.
 In this project, I was given a case study where I had to design and implement an incident response system.
 
